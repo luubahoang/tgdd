@@ -1,0 +1,69 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #adabab; 
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 100vh; 
+}
+
+
+.payment-container {
+  background-color: #fff; 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 20 20px 20px rgba(223, 86, 22, 0.881);
+  width: 300px;
+  box-sizing: border-box;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+.payment-container h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+label {
+  font-size: 16px;
+  color: #555;
+  display: flex; 
+  align-items: center;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  width: 100%;
+}
+
+
+input[type="radio"] {
+  margin-right: 10px; /*Khoảng cách giữa dấu tích và văn bản */
+  transform: translateY(1px); /* Để căn giữa dấu tick với văn bản */
+}
+
+
+input[type="radio"]:checked {
+  accent-color: #69f96e;
+}
+
+
+form {
+  margin: 0;
+  padding: 0;
+}
+
+.payment-container form label:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.payment-container form label input[type="radio"] {
+  margin-right: 10px;
+}

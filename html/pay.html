@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán</title>
+    <link rel="stylesheet" href="../css/style_pay.css">
+    <script>
+ 
+        function goTopayPage(choice) {
+            switch(choice) {
+                case 'cash':
+                    window.location.href = 'dat_hang_thanh_cong.html';
+                    break;
+                case 'transfer':
+                    window.location.href = 'pay_InternetBanking.html';
+                    break;
+                case 'card':
+                    window.location.href = 'pay_card.html';
+                    break;
+                default:
+                    break;
+            }
+        }
+    </script>
+</head>
+<body>
+
+<div class="payment-container">
+    <h2>Chọn phương thức thanh toán</h2>
+    <form id="paymentForm" onsubmit="return false;"> <!-- Ngừng form gửi khi chưa chọn phương thức thanh toán -->
+        <label>
+            <input type="radio" name="payment" value="cash" onclick="goTopayPage('cash')">    Thanh toán khi nhận hàng
+        </label><br>
+        <label>
+            <input type="radio" name="payment" value="transfer" onclick="goTopayPage('transfer')">    Chuyển khoản
+        </label><br>
+        <label>
+            <input type="radio" name="payment" value="card" onclick="goTopayPage('card')">    Thanh toán qua thẻ
+        </label><br>
+      
+    </form>
+</div>
+
+</body>
+</html>
+
+
+
+

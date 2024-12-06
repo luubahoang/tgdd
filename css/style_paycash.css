@@ -1,0 +1,28 @@
+
+body, html {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #dcdcd9;
+    font-family: Arial, sans-serif;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;  /* Loại bỏ gạch chân */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Khi hover */
+.button:hover {
+    background-color: #45a049;
+}

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    width: 200px;
+    margin: 20px 0 0 30px;
+}
+
+section {
+    margin: 50px auto;
+    width: 60%; /* Chiếm 60% chiều rộng của màn hình */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+    height: auto; /* Chiều cao tự động theo nội dung */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+input, select {
+    height: 40px; /* Tăng chiều cao các ô input và select */
+    padding: 10px;
+    font-size: 16px;
+    border: 0.5px solid rgb(221, 201, 201);
+    border-radius: 5px;
+    width: 100%; /* Đảm bảo các ô chiếm toàn bộ chiều rộng của div */
+    margin-top: 5px;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border: 0.5px solid #FFC801; /* Màu viền khi ô input hoặc select được chọn */
+}
+
+button {
+    display: block;
+    width: 40%;
+    font-size: 18px;
+    margin: 40px auto;
+    padding: 10px 15px;
+    border: 2px solid black;
+    background-color: #FFC801;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    color: black;
+    transition: all 0.3s ease; /* Thêm hiệu ứng chuyển động */
+}
+
+button:hover {
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.34);
+    transform: translateY(-3px); /* Đẩy nút lên khi hover */
+}
+
+@media (max-width: 768px) {
+    section {
+        width: 80%; /* Giảm kích thước form trên các màn hình nhỏ */
+    }
+    button {
+        width: 70%; /* Nút cũng thu hẹp lại khi trên thiết bị nhỏ */
+    }
+}

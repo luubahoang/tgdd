@@ -1,0 +1,100 @@
+
+body, html {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #979393;
+    font-family: Arial, sans-serif;
+}
+
+.payment-container {
+    width: 95%;
+    max-width: 600px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(100, 94, 94, 0.2);
+    padding: 40px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+.paymen-container {
+    width: 95%;
+    max-width: 600px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(100, 94, 94, 0.2);
+    padding: 40px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    position: relative;
+}
+
+
+.line-left, .line-right {
+    flex: 1;
+    height: 2px;
+    background-color: #100f0f;
+    margin: 0 10px;
+}
+
+.title-image {
+    width: 140px;
+    height: auto;
+}
+
+.form-image-container {
+    margin: 0px 0;
+}
+
+.form-image {
+    width: 80%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.form-image:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .payment-container {
+        width: 95%;
+    }
+
+    .title-image {
+        width: 120px;
+    }
+}
+
+button {
+    width: 100%;
+    padding: 12px 0;
+    background-color: #ffeb3b;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #35fd67;
+}
+
